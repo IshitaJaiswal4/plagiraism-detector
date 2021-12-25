@@ -1,0 +1,24 @@
+<home>
+     
+<title>Plagiarism Checker</title>
+
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+<body>
+<section class = "header">
+<video autoplay loop class="video-background" muted plays-inline>
+    <source src="{{url_for('static', filename='production ID_4782681.mp4')}}" type="video/mp4">
+  </video>
+<div class="welcome-msg">
+<form method="post" action="/">
+         <p>Input Text : </p>
+         <p><textarea name="query" rows="15" cols="80" style="background-color:#99FFFF;" autofocus>{{query}}</textarea></p>
+         <br>
+         <p><input type="submit" name="submit" value="CHECK PLAGIARISM"></p>
+          <br>
+         <p><h3>{{output}}</h3></p>
+    
+</form>
+</div> 
+</section>
+</body>
+</home>
